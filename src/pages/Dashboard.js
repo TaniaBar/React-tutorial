@@ -10,6 +10,7 @@
 // export default Dashboard;
 
 import { Routes, Link, Route, useParams } from "react-router-dom";
+import "../index.css";
 
 const Dashboard = () => {
   return (
@@ -48,7 +49,7 @@ export const Orders = () => {
       <ul>
         {orderIds.map((orderId) => (
           <li key={orderId}>
-            <Link to={`orderdetails/${orderId}`}>Voir commande #{orderId}</Link>
+            <Link to={`orderdetails/${orderId}`}>Show order #{orderId}</Link>
             {/* Link ai dettagli dell'ordine */}
           </li>
         ))}
