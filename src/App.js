@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import RouteAsObj from "./components/RouteAsObjet";
 
 const App = () => {
   return (
@@ -24,6 +25,11 @@ const App = () => {
               About
             </Link>
           </li>
+          <li>
+            <Link to="/routeAsObj" activeclassname="active">
+              Route as Object
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className="main">
@@ -32,6 +38,7 @@ const App = () => {
           <Route path="/" element={<Home />}></Route>
           <Route path="dashboard/*" element={<Dashboard />}></Route>
           <Route path="about" element={<About />}></Route>
+          <Route path="routeAsObj/*" element={<RouteAsObj />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </div>

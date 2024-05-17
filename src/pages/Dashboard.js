@@ -77,9 +77,7 @@ export const OrderDetails = () => {
             Return to the orders page
         </a>
     </>
-  )
-    
-    
+  )   
 };
 
 export const Quotes = () => {
