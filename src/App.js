@@ -30,7 +30,7 @@ const App = () => {
         {/* Define all the routes */}
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="dashboard" element={<Dashboard />}></Route>
+          <Route path="dashboard/*" element={<Dashboard />}></Route>
           <Route path="about" element={<About />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
