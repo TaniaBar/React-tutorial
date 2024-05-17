@@ -74,7 +74,7 @@ export const OrderDetails = () => {
     <>
         <h2>Details of order {orderId}</h2>
         <a href="#" onClick={onBackClick}>
-            Retourn to the orders page
+            Return to the orders page
         </a>
     </>
   )
