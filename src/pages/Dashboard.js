@@ -9,7 +9,7 @@
 
 // export default Dashboard;
 
-import { Routes, Link, Route, useParams } from "react-router-dom";
+import { Routes, Link, Route, useParams, useNavigate } from "react-router-dom";
 import "../index.css";
 
 const Dashboard = () => {
@@ -64,7 +64,22 @@ export const Orders = () => {
 
 export const OrderDetails = () => {
   const {orderId} = useParams();
-  return <h2>Details of order {orderId}</h2>;
+  const navigate = useNavigate();
+
+  const onBackClick = () => {
+    // navigate(-1)
+    navigate("/dashboard/orders");
+  }
+  return (
+    <>
+        <h2>Details of order {orderId}</h2>
+        <a href="#" onClick={onBackClick}>
+            Retourn to the orders page
+        </a>
+    </>
+  )
+    
+    
 };
 
 export const Quotes = () => {
