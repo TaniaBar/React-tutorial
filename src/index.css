@@ -35,3 +35,10 @@ nav a.active {
 .dashboard {
   padding: 1rem 0;
 }
+
+.main ul.listorder {
+  flex-direction: column;
+  border: 1px solid;
+  padding: 0.5rem;
+}
+  
