@@ -1,0 +1,21 @@
+.search-bar {
+    margin-top: 30px;
+}
+
+.input-search {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    height: 20px;
+    border-color: rgb(41, 41, 124);
+}
+
+.btn-search {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(41, 41, 124);
+    color: #fff;
+    border-style: none;
+    height: 24px;
+}

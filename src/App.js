@@ -5,6 +5,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import RouteAsObj from "./components/RouteAsObjet";
 import Search from "./components/Search.js";
+import "./App.css";
 
 const App = () => {
   return (
