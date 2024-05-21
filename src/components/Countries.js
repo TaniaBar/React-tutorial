@@ -17,7 +17,7 @@ const Countries = () => {
         })
         .catch((error) => console.error("Error fetching data: ", error));
     }
-  }, [playOnce]); // Rimuoviamo 'data' dalla lista di dipendenze
+  }, [playOnce]); // We remove 'data' from the dependency list
 
   return (
     <div className="countries">

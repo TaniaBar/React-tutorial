@@ -1,4 +1,3 @@
-/* src/components/Card.css */
 .card {
     border: 1px solid #ccc;
     padding: 10px;
@@ -8,7 +7,7 @@
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    position: relative; /* Per posizionare il contenuto in maniera relativa */
+    position: relative; 
   }
   
   .flag {
@@ -18,11 +17,11 @@
   }
   
   .data-container {
-    position: absolute; /* Posiziona il contenuto in maniera assoluta */
-    bottom: 0; /* Fissa il contenuto al fondo della card */
+    position: absolute; 
+    bottom: 0; 
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 10px;
   }
   
@@ -35,11 +34,11 @@
   .country-name {
     font-weight: bold;
     margin-bottom: 5px;
-    color: white; /* Testo bianco per contrasto */
+    color: white;
   }
   
   .data-container li {
     margin-bottom: 5px;
-    color: white; /* Testo bianco per contrasto */
+    color: white; 
   }
   
