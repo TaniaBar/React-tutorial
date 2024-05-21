@@ -10,6 +10,7 @@ import LoginPage from "./pages/LoginPage.js";
 import ProtectedPage from "./pages/ProtectedPage.js";
 import PrivateElement from "./components/PrivateRoute.js";
 import PublicPage from "./pages/PublicPage.js";
+import Countries from "./pages/Countries.js";
 
 
 const App = () => {
@@ -52,6 +53,11 @@ const App = () => {
               Protected Page
             </Link>
           </li>
+          <li>
+            <Link to="/countries" activeclassname="active">
+              Countries
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className="main">
@@ -63,8 +69,9 @@ const App = () => {
           <Route path="routeAsObj/*" element={<RouteAsObj />}></Route>
           <Route path="search" element={<Search />}></Route>
           <Route path="public" element={<PublicPage />}></Route>
-          <Route path="protected" element={<PrivateElement> <ProtectedPage x={1} /></PrivateElement>}></Route>
+          <Route path="protected" element={<PrivateElement> <ProtectedPage x={1}/> </PrivateElement>}></Route>
           <Route path="login" element={<LoginPage />}></Route>
+          <Route path="countries" element={<Countries />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </div>
