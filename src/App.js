@@ -6,6 +6,11 @@ import NotFound from "./pages/NotFound";
 import RouteAsObj from "./components/RouteAsObjet";
 import Search from "./components/Search.js";
 import "./App.css";
+import LoginPage from "./pages/LoginPage.js";
+import ProtectedPage from "./pages/ProtectedPage.js";
+import PrivateElement from "./components/PrivateRoute.js";
+import PublicPage from "./pages/PublicPage.js";
+
 
 const App = () => {
   return (
@@ -37,6 +42,16 @@ const App = () => {
               Search
             </Link>
           </li>
+          <li>
+            <Link to="/public" activeclassname="active">
+              Public Page
+            </Link>
+          </li>
+          <li>
+            <Link to="/protected" activeclassname="active">
+              Protected Page
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className="main">
@@ -47,6 +62,9 @@ const App = () => {
           <Route path="about" element={<About />}></Route>
           <Route path="routeAsObj/*" element={<RouteAsObj />}></Route>
           <Route path="search" element={<Search />}></Route>
+          <Route path="public" element={<PublicPage />}></Route>
+          <Route path="protected" element={<PrivateElement> <ProtectedPage x={1} /></PrivateElement>}></Route>
+          <Route path="login" element={<LoginPage />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </div>
