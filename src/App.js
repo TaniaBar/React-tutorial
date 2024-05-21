@@ -10,7 +10,7 @@ import LoginPage from "./pages/LoginPage.js";
 import ProtectedPage from "./pages/ProtectedPage.js";
 import PrivateElement from "./components/PrivateRoute.js";
 import PublicPage from "./pages/PublicPage.js";
-import Countries from "./pages/Countries.js";
+import Countries from "./components/Countries.js";
 
 
 const App = () => {

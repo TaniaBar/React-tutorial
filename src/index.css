@@ -41,4 +41,35 @@ nav a.active {
   border: 1px solid;
   padding: 0.5rem;
 }
+
+.countries-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 100px;
+  position:relative;
+  margin: 1px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.25);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+img {
+  object-fit: cover;
+  width: 160px; 
+}
+
+.data-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.data-container ul {
+  flex-direction: column;
+  list-style-type: none;
+}
   
