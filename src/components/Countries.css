@@ -1,0 +1,19 @@
+.countries {
+    display: flex;
+    flex-wrap: wrap; /* Permette di avvolgere le card */
+    justify-content: center; /* Centra le card orizzontalmente */
+    padding: 20px;
+}
+  
+.countries-list {
+    display: flex;
+    flex-wrap: wrap; /* Permette di avvolgere le card */
+    justify-content: center; /* Centra le card orizzontalmente */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+  
+.countries-list li {
+    margin: 10px; /* Margine tra le card */
+}

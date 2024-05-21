@@ -1,0 +1,45 @@
+/* src/components/Card.css */
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative; /* Per posizionare il contenuto in maniera relativa */
+  }
+  
+  .flag {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .data-container {
+    position: absolute; /* Posiziona il contenuto in maniera assoluta */
+    bottom: 0; /* Fissa il contenuto al fondo della card */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+    padding: 10px;
+  }
+  
+  .data-container ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .country-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white; /* Testo bianco per contrasto */
+  }
+  
+  .data-container li {
+    margin-bottom: 5px;
+    color: white; /* Testo bianco per contrasto */
+  }
+  

@@ -1,5 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Card from './Card';
+import './Countries.css';
 
 const Countries = () => {
   const [data, setData] = useState([]);
@@ -21,7 +23,7 @@ const Countries = () => {
     <div className="countries">
       <ul className="countries-list">
         {data.map((country) => (
-          <li key={country.cca3}>{country.name.official}</li> // Aggiungiamo la chiave per ogni elemento
+          <Card key={country.name.official} country={country} />
         ))}
       </ul>
     </div>
